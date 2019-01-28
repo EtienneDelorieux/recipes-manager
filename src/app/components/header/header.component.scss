@@ -1,0 +1,28 @@
+@import "../../../assets/styles/variables.scss";
+
+.app__header {
+  background-color: $color-black;
+  padding: $space-s;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.app__logo {
+  font-family: $font-secondary;
+  color: $color-white;
+  font-weight: 900;
+}
+
+.app__nav {
+  font-family: $font-primary;
+
+  a {
+    color: darken($color-white, 12%);
+    margin-left: $space-s;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}

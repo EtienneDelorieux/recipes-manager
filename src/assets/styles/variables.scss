@@ -1,18 +1,24 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:400,700');
+
 /* Fonts */
+$font-primary: 'Roboto', sans-serif;
+$font-secondary: 'Merriweather', serif;
 $font-size-base: 12px;
-$line-height-base: calc(1.75 * $font-size-base);
+$line-height-base: calc(1.75 * #{$font-size-base});
 
 /* Colors */
 $color-primary: #00885f;
+$color-black: #161616;
+$color-white: #fff;
 
 /* Spacing */
 $space-unit: 1rem;
-$space-xxs: calc(0.5 * $space-unit);
-$space-xs: calc(0.75 * $space-unit);
-$space-s: calc(1.25 * $space-unit);
-$space-m: calc(2 * $space-unit);
-$space-l: calc(3.25 * $space-unit);
-$space-xl: calc(5.25 * $space-unit);
+$space-xxs: calc(0.5 * #{$space-unit});
+$space-xs: calc(0.75 * #{$space-unit});
+$space-s: calc(1.25 * #{$space-unit});
+$space-m: calc(2 * #{$space-unit});
+$space-l: calc(3.25 * #{$space-unit});
+$space-xl: calc(5.25 * #{$space-unit});
 
-/* Padding */
-$component-padding: $space-s;
+/* Utilities */
+$transition: all .2s;
