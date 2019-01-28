@@ -1,0 +1,56 @@
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:400,700');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+}
+
+body {
+  padding: 100px 0;
+}
+
+.container {
+  width: 100%;
+  max-width: 50%;
+  margin: 0 auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Merriweather", serif;
+  font-weight: 900;
+}
+
+h1 {
+  font-size: calc(3 * $font-size-base);
+  margin-bottom: $space-s;
+}
+
+h2 {
+  font-size: calc(2 * $font-size-base);
+  margin-bottom: $space-xs;
+}
+
+h3 {
+  font-size: calc(1.25 * $font-size-base);
+  margin-bottom: $space-xs;
+}
+
+p {
+  font-size: $font-size-base;
+  margin-bottom: $space-s;
+  line-height: $line-height-base;
+}
+
+p + h1,
+p + h2,
+p + h3 {
+  margin-top: $space-l;
+}
