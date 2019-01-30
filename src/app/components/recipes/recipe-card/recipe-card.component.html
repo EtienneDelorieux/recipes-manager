@@ -1,0 +1,34 @@
+<div class="recipe__card">
+  <div class="recipe__card__image" [style.backgroundImage]="'url('+ recipe.imagePath +')'">
+    <h3 class="recipe__card__name">{{recipe.name}}</h3>
+    <span class="gradient"></span>
+  </div>
+  <div class="recipe__card__content">
+    <div class="recipe__card__categories">
+      <span *ngFor="let category of recipe.categories" class="recipe__card__category">
+        {{category}}
+      </span>
+    </div>
+    <div class="recipe__card__ingredients">
+      <strong>Ingrédients</strong>
+      <ul>
+        <li *ngFor="let ingredient of recipe.ingredients">
+          <span class="recipe__card__ingredients--name">
+            {{ingredient.name}}
+          </span>
+          <span class="recipe__card__ingredients--quantity">
+            {{ingredient.quantity}}{{ingredient.unit}}
+          </span>
+        </li>
+      </ul>
+    </div>
+  </div>
+  <div class="recipe__card__actions">
+    <span class="recipe__card__edit">
+      <i class="fas fa-pencil-alt"></i>Editer
+    </span>
+    <span class="recipe__card__delete">
+        <i class="fas fa-trash-alt"></i>Supprimer
+    </span>
+  </div>
+</div>

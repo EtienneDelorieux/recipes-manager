@@ -13,13 +13,13 @@
 body {
   font-family: $font-primary;
   font-weight: 400;
-  color: $color-black;
+  color: $color-dark-grey;
   background-color: $color-background;
 }
 
 .container {
   width: 100%;
-  max-width: 70%;
+  max-width: 80%;
   margin: 0 auto;
 }
 
@@ -28,21 +28,22 @@ h2,
 h3 {
   font-family: $font-secondary;
   font-weight: 700;
+  color: $color-black
 }
 
 h1 {
   font-size: calc(3 * $font-size-base);
-  margin-bottom: $space-s;
+  margin-bottom: $space-m;
 }
 
 h2 {
   font-size: calc(2 * $font-size-base);
-  margin-bottom: $space-xs;
+  margin-bottom: $space-s;
 }
 
 h3 {
   font-size: calc(1.25 * $font-size-base);
-  margin-bottom: $space-xs;
+  margin-bottom: $space-s;
 }
 
 a {

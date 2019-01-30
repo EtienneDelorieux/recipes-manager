@@ -1,0 +1,6 @@
+@import "../../../assets/styles/variables.scss";
+
+.recipe__list {
+  column-count: 3;
+  column-gap: $space-s;
+}
