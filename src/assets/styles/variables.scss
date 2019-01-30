@@ -1,15 +1,17 @@
-@import url('https://fonts.googleapis.com/css?family=Merriweather:400,900|Roboto:400,700');
+@import url('https://fonts.googleapis.com/css?family=Bitter:700|Roboto:400,500,700');
 
 /* Fonts */
 $font-primary: 'Roboto', sans-serif;
-$font-secondary: 'Merriweather', serif;
-$font-size-base: 12px;
+$font-secondary: 'Bitter', serif;
+$font-size-base: 15px;
 $line-height-base: calc(1.75 * #{$font-size-base});
 
 /* Colors */
 $color-primary: #00885f;
 $color-black: #161616;
 $color-white: #fff;
+$color-danger: #c42c39;
+$color-background: #f0f3fa;
 
 /* Spacing */
 $space-unit: 1rem;

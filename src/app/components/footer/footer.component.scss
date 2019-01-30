@@ -1,0 +1,36 @@
+@import "../../../assets/styles/variables.scss";
+
+.app__footer {
+  background-color: #dce1eb;
+  padding: $space-xs 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  p {
+    margin-bottom: 0;
+  }
+}
+
+.app__footer__credits {
+  font-size: .8rem;
+  text-transform: uppercase;
+
+  i {
+    color: $color-danger;
+  }
+}
+
+.github-link {
+  font-size: 1.2rem;
+  color: $color-black;
+  opacity: .7;
+  transition: $transition;
+
+  &:hover {
+    opacity: 1;
+  }
+}

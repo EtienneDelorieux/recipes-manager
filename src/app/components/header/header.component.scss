@@ -8,7 +8,7 @@
   justify-content: space-between;
 }
 
-.app__logo {
+.app__logo a {
   font-family: $font-secondary;
   color: $color-white;
   font-weight: 900;
@@ -21,7 +21,8 @@
     color: darken($color-white, 12%);
     margin-left: $space-s;
 
-    &:hover {
+    &:hover,
+    &.active {
       color: $color-white;
     }
   }
