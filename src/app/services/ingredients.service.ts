@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Ingredient } from '../models/ingredient.model';
+import { Ingredient } from '../shared/models/ingredient.model';
 
 interface IngredientCategory {
   name: string;
@@ -10,7 +10,7 @@ interface IngredientCategory {
   providedIn: 'root'
 })
 export class IngredientsService {
-  ingredients: IngredientCategory[] = [
+  private ingredients: IngredientCategory[] = [
     {
       name: 'Protéine',
       ingredients: [
@@ -49,9 +49,9 @@ export class IngredientsService {
     {
       name: 'Fruits',
       ingredients: [
-        {name: 'Banane', category: 'Légumes', unit: 'u'},
-        {name: 'Kiwi', category: 'Légumes', unit: 'u'},
-        {name: 'Pomme', category: 'Légumes', unit: 'u'},
+        {name: 'Banane', category: 'Fruits', unit: 'u'},
+        {name: 'Kiwi', category: 'Fruits', unit: 'u'},
+        {name: 'Pomme', category: 'Fruits', unit: 'u'},
       ]
     },
     {
@@ -69,4 +69,8 @@ export class IngredientsService {
   ];
 
   constructor() { }
+
+  getIngredients() {
+    return this.ingredients.slice();
+  }
 }

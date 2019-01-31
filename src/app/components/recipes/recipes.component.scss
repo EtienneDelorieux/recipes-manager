@@ -4,3 +4,10 @@
   column-count: 3;
   column-gap: $space-s;
 }
+
+.recipe__create {
+  margin: $space-m 0;
+  padding: $space-m 0;
+  border-top: 1px solid $color-background-darker;
+  border-bottom: 1px solid $color-background-darker;
+}

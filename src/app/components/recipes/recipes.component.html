@@ -1,4 +1,55 @@
-<h1>Gérez vos recettes ({{recipes.length}})</h1>
+<h1>Vos recettes ({{recipes.length}})</h1>
+
+<section class="recipe__create">
+  <form>
+    <div class="form--group">
+      <label for="recipe-name">Nom de la recette</label>
+      <input type="text" id="recipe-name">
+    </div>
+    <div class="form--group">
+      <div class="ingredient--headings row">
+        <div class="col-5">
+          <label for="ingredient-name">Ingrédient</label>
+        </div>
+        <div class="col-5">
+          <label for="ingredient-quantity">Quantité</label>
+        </div>
+      </div>
+      <div class="ingredient--input row">
+        <div class="col-5">
+          <select id="ingredient-name">
+            <optgroup *ngFor="let category of ingredients" label="{{category.name}}">
+              <option *ngFor="let ingredient of category.ingredients">
+                {{ingredient.name}} ({{ingredient.unit}})
+              </option>
+            </optgroup>
+          </select>
+        </div>
+        <div class="col-5">
+          <input type="number">
+        </div>
+        <div class="col-1">
+          <button><i class="fas fa-plus"></i></button>
+        </div>
+        <div class="col-1">
+          <button><i class="fas fa-minus"></i></button>
+        </div>
+      </div>
+    </div>
+    <div class="form--group">
+      <label for="recipe-category">Catégories</label>
+      <span class="recipe--category" *ngFor="let category of recipeCategories">
+        <input type="checkbox" id="{{category}}">
+        <label for="{{category}}">{{category}}</label>
+      </span>
+    </div>
+    <div class="form--group">
+      <label for="image-path">Lien de l'image</label>
+      <input type="text" id="image-path">
+    </div>
+    <button type="submit">Valider</button>
+  </form>
+</section>
 
 <section class="recipe__list">
   <app-recipe-card *ngFor="let recipe of recipes" [recipe]="recipe"></app-recipe-card>
